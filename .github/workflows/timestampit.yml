@@ -1,0 +1,16 @@
+name: Create Signed Timestamp
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  timestampit:
+    runs-on: ubuntu-latest
+    name: "Create a trusted timestamp for this repo"
+    steps:
+      - uses: timestampit/github_action@v0.8
