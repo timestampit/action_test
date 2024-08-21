@@ -13,4 +13,4 @@ jobs:
     runs-on: ubuntu-latest
     name: "Create a trusted timestamp for this repo"
     steps:
-      - uses: timestampit/github_action@v0.8
+      - uses: timestampit/github_action@v1.0
